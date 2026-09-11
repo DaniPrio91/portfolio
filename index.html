@@ -3,131 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Danilo Prioli</title>
+    <meta
+      name="description"
+      content="Portfolio professionale di Danilo Prioli: esperienza nella logistica e in SAP, percorso tecnico in Informatica, progetti Java, web, SQL e reti."
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Danilo Prioli | Logistica, SAP e Informatica</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="navbar">
-        <div class="logo">DP</div>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-        <ul class="menu">
-          <li><a href="#chi-sono">Chi sono</a></li>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigazione principale">
+        <a class="brand" href="#home" aria-label="Danilo Prioli - Home">
+          <span class="brand-mark">DP</span>
+          <span class="brand-name">Danilo Prioli</span>
+        </a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principale">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Apri menu</span>
+        </button>
+
+        <ul class="menu" id="menu-principale">
+          <li><a href="#profilo">Profilo</a></li>
+          <li><a href="#esperienza">Esperienza</a></li>
           <li><a href="#competenze">Competenze</a></li>
           <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#formazione">Formazione</a></li>
           <li><a href="#contatti">Contatti</a></li>
         </ul>
       </nav>
-
-      <div class="hero-content">
-        <h1>Danilo Prioli</h1>
-        <h2>Aspirante sviluppatore junior</h2>
-        <p>Java | Database | Reti informatiche | Sviluppo web</p>
-
-        <div class="hero-buttons">
-          <a href="#chi-sono">Scopri di più</a>
-          <a href="cv/Danilo-Prioli-CV.pdf" target="_blank">Scarica CV</a>
-          <a href="https://github.com/DaniPrio91" target="_blank">GitHub</a>
-        </div>
-      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Chi sono</h2>
-        <p>
-          Mi chiamo Danilo Prioli e sto costruendo il mio percorso nel mondo
-          dell’informatica. Dopo diversi anni di esperienza lavorativa in ambito
-          logistico, ho deciso di investire sulla mia formazione tecnica, studiando
-          programmazione, database, reti informatiche e sviluppo web.
-        </p>
-        <p> 
-          Il mio obiettivo è entrare nel settore IT come sviluppatore junior o supporto
-          tecnico, portando con me serietà, organizzazione e voglia di imparare.
-        </p>
-      </section>
-
-      <section>
-        <h2>Obiettivo</h2>
-        <p>
-          Il mio obiettivo è entrare nel mondo IT come sviluppatore junior o
-          supporto tecnico, continuando a crescere nelle tecnologie Java,
-          database e reti informatiche.
-        </p>
-      </section>
-
-      <section>
-        <h2>Esperienza</h2>
-        <p>
-          Esperienza lavorativa in ambito logistico con utilizzo di sistemi
-          gestionali (SAP), gestione ordini e organizzazione del lavoro.
-        </p>
-      </section>
-
-      <section>
-        <h2>Competenze</h2>
-        <ul>
-          <li>Java base e programmazione a oggetti</li>
-          <li>HTML, CSS e JavaScript base</li>
-          <li>SQL e database</li>
-          <li>Cisco Packet Tracer e reti informatiche</li>
-          <li>Git e GitHub</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Progetti</h2>
-        <ul>
-          <li>
-            <h3>Bank Account Manager (Java)</h3>
-            <p>
-              Applicazione sviluppata in Java per la gestione di conti bancari,
-              con funzionalità di deposito, prelievo e gestione saldo.
+    <main id="contenuto">
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Profilo professionale</p>
+            <h1>Logistica, SAP e Informatica.</h1>
+            <p class="hero-lead">
+              Circa 10 anni di esperienza nella logistica e nel magazzino, con utilizzo quotidiano di SAP.
+              Oggi sto completando il percorso di Istruzione Tecnica – Indirizzo Informatica, unendo esperienza
+              operativa, competenze gestionali e formazione tecnologica.
             </p>
-          </li>
-          <li>
-            <h3>Reti con Cisco Packet Tracer</h3>
-            <p>
-              Simulazioni di reti con configurazione IP, subnetting, router e
-              switch.
-            </p>
-          </li>
-          <li>
-            <h3>Esercizi SQL</h3>
-            <p>
-              Creazione di database e query SQL con PostgreSQL (SELECT, JOIN,
-              INSERT).
-            </p>
-          </li>
-        </ul>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#esperienza">Scopri il mio percorso</a>
+              <a class="button button-secondary" href="cv/Danilo-Prioli-CV.pdf" target="_blank" rel="noopener">
+                Apri il CV
+              </a>
+              <a class="button button-ghost" href="https://github.com/DaniPrio91" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+
+            <div class="availability">
+              <span class="availability-dot" aria-hidden="true"></span>
+              Interessato a opportunità in logistica, gestionali/ERP e ruoli IT junior.
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Punti chiave del profilo">
+            <div class="stat-card">
+              <span class="stat-value">10+</span>
+              <span class="stat-label">anni in logistica</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">SAP</span>
+              <span class="stat-label">utilizzo quotidiano</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">5ª</span>
+              <span class="stat-label">idoneità conseguita</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">IT</span>
+              <span class="stat-label">percorso tecnico in corso</span>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <section>
-        <h2>Interessi personali</h2>
-        <p>
-          Nel tempo libero coltivo la passione per la musica e la batteria.
-          Mi piace inoltre approfondire il mondo della tecnologia,
-          dell'informatica e degli investimenti.
-        </p>
+      <section class="section" id="profilo">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Profilo</p>
+            <h2>Esperienza concreta, con uno sguardo verso la tecnologia.</h2>
+          </div>
+          <div class="prose-card">
+            <p>
+              Ho costruito il mio percorso professionale nella logistica, occupandomi di movimentazione merci,
+              inventario, DDT, ordini, bollettazione, controllo dati e organizzazione operativa. L'esperienza maturata
+              mi ha permesso di sviluppare precisione, affidabilità e una buona conoscenza dei processi di magazzino.
+            </p>
+            <p>
+              Parallelamente sto completando il percorso tecnico in Informatica, approfondendo programmazione,
+              database, sistemi e reti. Il mio obiettivo è valorizzare entrambe le aree: l'esperienza aziendale già
+              acquisita e le nuove competenze tecnologiche.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Contatti</h2>
-        <p>Email: danilo.prioli91@gmail.com</p>
-        <p>
-          <a class="button" href="cv/Danilo-Prioli-CV.pdf" target="_blank">
-            Scarica il mio CV
-          </a>
-        </p>
-        <p>
-          <a class="button" href="https://github.com/DaniPrio91" target="_blank"
-            >Guarda i miei progetti su GitHub</a
-          >
-        </p>
+      <section class="section section-alt" id="esperienza">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Esperienza</p>
+            <h2>Il mio percorso lavorativo</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>08/2025 – 01/2026</span>
+                <span>Pedrengo (BG)</span>
+              </div>
+              <div class="timeline-content">
+                <h3>Magazziniere / Addetto alla logistica</h3>
+                <p class="company">ANT Logistics</p>
+                <p>
+                  Gestione e organizzazione operativa del magazzino: coordinamento dei viaggi degli autisti,
+                  controllo di DDT e bolle, gestione dell'inventario, aggiornamento dati a sistema, preparazione della
+                  merce e movimentazione con carrello elevatore.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>11/2016 – 08/2025</span>
+                <span>Villa d'Ogna (BG)</span>
+              </div>
+              <div class="timeline-content">
+                <h3>Magazziniere</h3>
+                <p class="company">Poly Pool S.p.A.</p>
+                <p>
+                  Utilizzo quotidiano di SAP per gestione ordini, bollettazione e registrazioni a sistema; gestione
+                  della merce in entrata e in uscita, verifica DDT, inventario, controllo qualità e movimentazione
+                  merci con carrelli elevatori.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="competenze">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Competenze</p>
+            <h2>Due aree che si completano</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-icon" aria-hidden="true">01</div>
+              <h3>Logistica e gestionali</h3>
+              <ul class="tag-list">
+                <li>SAP</li>
+                <li>Gestione ordini</li>
+                <li>DDT e bollettazione</li>
+                <li>Inventario</li>
+                <li>Entrata / uscita merci</li>
+                <li>Carrelli elevatori</li>
+                <li>Controllo dati</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-icon" aria-hidden="true">02</div>
+              <h3>Informatica</h3>
+              <ul class="tag-list">
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Git e GitHub</li>
+                <li>Sistemi e reti</li>
+                <li>Cisco Packet Tracer</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="progetti">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Progetti</p>
+            <h2>Progetti e attività pratiche</h2>
+            <p class="section-intro">
+              Esercitazioni sviluppate durante il percorso di studio per consolidare programmazione, database e reti.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-number">01</span>
+                <span class="project-tech">Java</span>
+              </div>
+              <h3>Bank Account Manager</h3>
+              <p>
+                Applicazione Java per la gestione di un conto bancario, con operazioni di deposito, prelievo e controllo
+                del saldo, sviluppata per esercitare classi, oggetti e logica applicativa.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-number">02</span>
+                <span class="project-tech">Networking</span>
+              </div>
+              <h3>Reti con Cisco Packet Tracer</h3>
+              <p>
+                Simulazioni di reti con configurazione degli indirizzi IP, subnetting e utilizzo di router e switch per
+                applicare in pratica i concetti studiati in sistemi e reti.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-number">03</span>
+                <span class="project-tech">SQL</span>
+              </div>
+              <h3>Esercitazioni database</h3>
+              <p>
+                Creazione di semplici database e query SQL, con utilizzo di SELECT, INSERT e JOIN per lavorare sulla
+                gestione e interrogazione dei dati.
+              </p>
+            </article>
+          </div>
+
+          <div class="projects-cta">
+            <a class="text-link" href="https://github.com/DaniPrio91" target="_blank" rel="noopener">
+              Vai al mio profilo GitHub <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="formazione">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Formazione</p>
+            <h2>Un percorso di crescita continua</h2>
+          </div>
+
+          <div class="education-list">
+            <article class="education-card featured">
+              <p class="education-date">In corso</p>
+              <h3>Istruzione Tecnica – Indirizzo Informatica</h3>
+              <p class="company">ITIS Pietro Paleocapa – Bergamo</p>
+              <p>
+                Idoneità alla classe quinta conseguita. Percorso finalizzato al conseguimento del diploma tecnico.
+              </p>
+            </article>
+
+            <article class="education-card">
+              <p class="education-date">2023 – 2028</p>
+              <h3>Formazione Carrelli Industriali Semoventi</h3>
+              <p class="company">EduC.A. Srl – Seriate (BG)</p>
+            </article>
+
+            <article class="education-card">
+              <p class="education-date">04/2026</p>
+              <h3>Corso di Inglese Intermedio – 50 ore</h3>
+              <p class="company">Ricam Academy</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contatti">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow light">Contatti</p>
+            <h2>Parliamo di opportunità professionali.</h2>
+            <p>
+              Sono disponibile a valutare ruoli in ambito logistico, gestionale/ERP e opportunità junior nel settore IT.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:danilo.prioli91@gmail.com">Scrivimi via email</a>
+            <a class="button button-outline-light" href="cv/Danilo-Prioli-CV.pdf" target="_blank" rel="noopener">
+              Consulta il CV
+            </a>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>© 2026 Danilo Prioli - Portfolio personale</p>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Danilo Prioli</p>
+        <div class="footer-links">
+          <a href="mailto:danilo.prioli91@gmail.com">Email</a>
+          <a href="https://github.com/DaniPrio91" target="_blank" rel="noopener">GitHub</a>
+          <a href="#home">Torna su ↑</a>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.menu');
+
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          menu.classList.toggle('open');
+        });
+
+        menu.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('open');
+          });
+        });
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
